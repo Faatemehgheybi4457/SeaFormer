@@ -37,7 +37,8 @@ model = dict(
         num_heads=model_cfgs['num_heads'],
         drop_path_rate=model_cfgs['drop_path_rate'],
         norm_cfg=norm_cfg,
-        init_cfg=dict(type='Pretrained', checkpoint='/teamspace/studios/this_studio/SeaFormer_S_bs32_39.5.pth')
+        init_cfg=dict(type='Pretrained')
+        #init_cfg=dict(type='Pretrained', checkpoint='/teamspace/studios/this_studio/SeaFormer_S_bs32_39.5.pth')
     ),
     decode_head=dict(
         type='LightHead',
